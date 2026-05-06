@@ -563,15 +563,7 @@ export default function Home() {
               Email
             </a>
 
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/[0.04] px-6 font-black transition hover:-translate-y-1"
-            >
-              <Code2 className="size-5" />
-              GitHub
-            </a>
+            
           </div>
         </div>
       </section>
