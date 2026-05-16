@@ -33,6 +33,7 @@ type Project = {
   result: string;
   tags: string[];
   accent: string;
+  demoUrl?: string;
 };
 
 type SkillGroup = {
@@ -43,22 +44,6 @@ type SkillGroup = {
 
 const projects: Project[] = [
   {
-    id: "vistaplus",
-    title: "VistaPlus",
-    subtitle: "Plataforma de crecimiento social",
-    category: "Apps",
-    image: "/images/proyecto-vistaplus.png",
-    alt: "Dashboard de VistaPlus, aplicación web de crecimiento social",
-    description:
-      "Aplicación web en desarrollo para gestionar puntos, tareas, campañas y progreso dentro de un sistema de crecimiento social con interacción real.",
-    challenge:
-      "Diseñar una experiencia clara para que el usuario entienda su saldo, avance diario, campañas y tareas disponibles sin sentirse perdido.",
-    result:
-      "Dashboard con métricas, acciones rápidas, estado de cuenta y estructura preparada para crecer como producto digital.",
-    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Producto digital"],
-    accent: "from-emerald-400 to-cyan-300",
-  },
-  {
     id: "north-security",
     title: "North Security",
     subtitle: "Landing comercial para seguridad",
@@ -66,81 +51,69 @@ const projects: Project[] = [
     image: "/images/proyecto-north-security.png",
     alt: "Landing page de North Security para servicios de seguridad",
     description:
-      "Landing page para empresa de seguridad enfocada en presentar servicios, generar confianza y llevar al usuario hacia una solicitud de información.",
+      "Landing page para una empresa de seguridad, enfocada en transmitir confianza, explicar servicios, mostrar planes y facilitar el contacto.",
     challenge:
-      "Convertir una idea de servicio en una presencia visual seria, confiable y directa para condominios, edificios y empresas.",
+      "Crear una presencia digital seria para un servicio donde la confianza visual es clave desde el primer vistazo.",
     result:
-      "Hero potente, estructura comercial clara, CTA visible y estilo visual sobrio para transmitir seguridad.",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive", "UI"],
+      "Hero potente, servicios claros, planes comerciales, formulario de contacto y estructura responsive lista para mostrar a clientes.",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive", "Formulario"],
     accent: "from-sky-400 to-blue-500",
+    demoUrl: "https://north-security-demo.vercel.app",
   },
   {
-    id: "lozano",
-    title: "Lozano Revestimientos",
-    subtitle: "Web B2B industrial",
-    category: "Webs",
-    image: "/images/proyecto-lozano.png",
-    alt: "Sitio web industrial de Lozano Revestimientos",
-    description:
-      "Sitio corporativo para servicios industriales y minería, con enfoque B2B, navegación clara y presentación profesional de servicios.",
-    challenge:
-      "Crear una web industrial que no se vea genérica y que comunique experiencia, confianza y servicio especializado.",
-    result:
-      "Diseño corporativo moderno, orientado a empresas, minería e industria, con mensaje comercial más fuerte.",
-    tags: ["HTML", "CSS", "JavaScript", "Diseño B2B", "Responsive"],
-    accent: "from-orange-300 to-yellow-500",
-  },
-  {
-    id: "neuro-psy",
-    title: "Neuro Psy",
+    id: "clinica-dental",
+    title: "Clínica Dental Sagrada Familia",
     subtitle: "Landing profesional de salud",
     category: "Webs",
-    image: "/images/proyecto-neuro-psy.png",
-    alt: "Landing page profesional de Neuro Psy",
+    image: "/images/proyecto-clinica-dental.png",
+    alt: "Landing page de Clínica Dental Sagrada Familia",
     description:
-      "Landing page para atención psicológica y neuropsicológica, diseñada con una estética sobria, clara y enfocada en confianza profesional.",
+      "Página web para una clínica dental, diseñada para generar confianza, presentar servicios y facilitar la solicitud de atención.",
     challenge:
-      "Diseñar una página sensible, humana y profesional sin caer en una estética fría o demasiado genérica.",
+      "Diseñar una web de salud que se vea profesional, cercana y clara, sin sentirse genérica o saturada.",
     result:
-      "Interfaz limpia, calmada y confiable, con jerarquía visual clara y experiencia orientada a contacto.",
-    tags: ["HTML", "CSS", "JavaScript", "UX", "Responsive"],
-    accent: "from-violet-300 to-fuchsia-500",
+      "Sitio responsive con estética limpia, secciones de servicios, llamados a la acción y contacto visible para pacientes.",
+    tags: ["HTML", "CSS", "JavaScript", "Salud", "Responsive"],
+    accent: "from-cyan-300 to-blue-500",
+    demoUrl: "https://clinicadental-s-f-demo.vercel.app",
   },
   {
-    id: "novatrend",
-    title: "NovaTrend / Celimax",
-    subtitle: "Ecommerce Shopify",
-    category: "Ecommerce",
-    image: "/images/proyecto-novatrend.png",
-    alt: "Página ecommerce Shopify de NovaTrend Celimax",
+    id: "ferreteria",
+    title: "Ferretería Coyhaique",
+    subtitle: "Web comercial para ferretería",
+    category: "Webs",
+    image: "/images/proyecto-ferreteria.png",
+    alt: "Página web comercial de Ferretería Coyhaique",
     description:
-      "Optimización visual de tienda Shopify enfocada en presentación de producto, experiencia mobile, confianza de compra y estructura comercial.",
+      "Sitio web para ferretería, pensado para mostrar categorías, productos destacados, confianza local y contacto rápido.",
     challenge:
-      "Mejorar una página de producto para que se vea más confiable, ordenada y preparada para tráfico de anuncios.",
+      "Convertir un negocio tradicional en una presencia digital más clara, ordenada y fácil de contactar desde celular.",
     result:
-      "Bloques visuales mejor estructurados, enfoque mobile-first, mensajes de confianza y presentación comercial más clara.",
-    tags: ["Shopify", "Liquid básico", "CSS", "CRO básico", "Mobile-first"],
-    accent: "from-rose-300 to-pink-500",
+      "Página visualmente comercial, responsive, con estructura de productos, beneficios y contacto directo.",
+    tags: ["HTML", "CSS", "JavaScript", "Comercio", "Responsive"],
+    accent: "from-amber-300 to-orange-500",
+    demoUrl: "https://ferreteria-6h2v.vercel.app",
   },
   {
-    id: "adminflow",
-    title: "AdminFlow Pyme Lite",
-    subtitle: "Automatización para pymes",
-    category: "Automatización",
-    image: "/images/proyecto-adminflow.png",
-    alt: "Automatización AdminFlow Pyme Lite en Google Sheets",
+    id: "centro-negocios",
+    title: "Centro de Negocios Uribe",
+    subtitle: "Landing corporativa local",
+    category: "Webs",
+    image: "/images/proyecto-centro-negocios.png",
+    alt: "Landing page de Centro de Negocios Uribe",
     description:
-      "Sistema de automatización con Google Sheets y Apps Script para clasificar correos, registrar clientes y apoyar procesos de cotización.",
+      "Landing page corporativa para un centro de negocios en Antofagasta, enfocada en ubicación, confianza y contacto.",
     challenge:
-      "Ordenar información de correos, clientes y cotizaciones en una estructura simple que una pyme pueda usar.",
+      "Crear una página sobria y profesional para un negocio local que necesitaba proyectar mayor presencia digital.",
     result:
-      "Flujo con Google Sheets, Gmail, Docs y Apps Script para apoyar procesos administrativos repetitivos.",
-    tags: ["Apps Script", "Google Sheets", "Gmail", "Google Docs", "Automatización"],
-    accent: "from-lime-300 to-emerald-500",
+      "Diseño moderno con foco en ubicación, rating, contacto por WhatsApp y una presentación clara para clientes potenciales.",
+    tags: ["HTML", "CSS", "JavaScript", "Negocio local", "Responsive"],
+    accent: "from-yellow-200 to-amber-500",
+    demoUrl: "https://centrodenegocios-demo.vercel.app",
   },
 ];
 
-const categories: ProjectCategory[] = ["Todos", "Apps", "Webs", "Ecommerce", "Automatización"];
+const categories: ProjectCategory[] = ["Todos", "Webs"];
 
 const skillGroups: SkillGroup[] = [
   {
@@ -263,9 +236,9 @@ export default function Home() {
           </p>
 
           <h1 className="max-w-4xl text-[clamp(2.75rem,5.4vw,5.25rem)] font-black leading-[0.9] tracking-[-0.075em]">
-            Tu proyecto merece una {" "}
+            Tu proyecto merece una{" "}
             <span className="bg-gradient-to-r from-white via-emerald-200 to-emerald-400 bg-clip-text text-transparent">
-            web que se vea a la altura.
+              web que se vea a la altura.
             </span>
           </h1>
 
@@ -315,8 +288,8 @@ export default function Home() {
       <Section id="proyectos">
         <SectionTitle
           kicker="Proyectos"
-          title="Proyectos reales con diseño, producto y enfoque comercial."
-          text="Una selección de páginas web, ecommerce, automatizaciones y una app propia en desarrollo. Cada proyecto muestra cómo transformo una idea en una interfaz clara, usable y presentable."
+          title="Proyectos publicados que puedes abrir y revisar."
+          text="Una selección de páginas web reales y demos publicadas online. Cada proyecto muestra cómo transformo una idea en una página clara, responsive y lista para presentar."
         />
 
         <div className="mb-8 flex flex-col gap-4 rounded-[2rem] border border-white/10 bg-white/[0.045] p-4 backdrop-blur-xl md:flex-row md:items-center md:justify-between">
@@ -562,8 +535,6 @@ export default function Home() {
               <Mail className="size-5" />
               Email
             </a>
-
-            
           </div>
         </div>
       </section>
@@ -733,6 +704,20 @@ function ProjectShowcase({ project }: { project: Project }) {
             </span>
           ))}
         </div>
+
+        {project.demoUrl ? (
+          <div className="mt-8">
+            <a
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-14 items-center justify-center gap-2 rounded-2xl bg-emerald-400 px-6 font-black text-black shadow-[0_18px_50px_rgba(34,255,115,.25)] transition hover:-translate-y-1"
+            >
+              Ver página
+              <ArrowUpRight className="size-4" />
+            </a>
+          </div>
+        ) : null}
       </div>
     </motion.article>
   );
